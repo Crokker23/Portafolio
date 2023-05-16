@@ -44,15 +44,3 @@ window.onscroll = () => {
 
 }
 
-// Formulario
-
-//  const $form = document.querySelector("#form")
-//  $form.addEventListener("submit", handleSubmit)
-
-//  function handleSubmit(event) {
-// // para que no se vaya a inicio
-// event.preventDefault()
-
-//  const form2= new FormData(this)
-//  console.log(form2.get("name"));
-//  }
