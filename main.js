@@ -1,10 +1,10 @@
 
 // Togle navbar
 const menuIcon= document.querySelector("#menu-icon");
-const navbar= document.querySelector(".navbar");
+const navbar= document.querySelector(".navbar")
 
 menuIcon.onclick = () => {
-    menuIcon.classList.toggle("bx-x");
+    menuIcon.classList.toggle("bx-x")
     navbar.classList.toggle("active");
 }
 
@@ -23,7 +23,7 @@ window.onscroll = () => {
             // active navbar links
             navLinks.forEach(links => {
                 links.classList.remove("active");
-                document.querySelector("header nav a[href*=" + id+"]").classList.add("active");
+                document.querySelector("header nav a[href*=" + id + "]").classList.add("active");
             });
             // activar seccion de animacion
             sec.classList.add("show-animate");
@@ -39,8 +39,7 @@ window.onscroll = () => {
 
     // remover toggle icon y barra navegacion
 
-    menuIcon.classList.toggle("bx-x");
+    menuIcon.classList.remove("bx-x");
     navbar.classList.remove("active");
 
 }
-
