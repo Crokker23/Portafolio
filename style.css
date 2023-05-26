@@ -10,6 +10,7 @@
 
 }
 
+/* aqui preselecione los colores a utilizar en el portafolio */
 :root {
     --bg-color: #524a3a;
     --second-bg-color: #2f2e33;
@@ -42,15 +43,18 @@ body {
     transition: .3s;
 }
 
+/* header sticky es lo que utilice en main para realiar la barra de navegacion y aqui le el backgroun trasparente, para un dia si lo quiero modificar esta aqui  */
 .header.sticky {
     background: transparent;
 }
 
+/* es el boton Nestor que aparece en la parte superior izquierda del portafolio */
 .logo {
     font-size: 2.5rem;
     color: var(--text-color);
 }
 
+/* aqui coienzo a darle estilo a la barra de navegacion */
 .navbar a {
     font-size: 1.7rem;
     color: var(--text-color);
@@ -77,6 +81,7 @@ section {
 
 }
 
+/* aqui le doy estilo a la imagen  */
 .home {
     display: flex;
     align-items: center;
@@ -95,8 +100,7 @@ section {
     font-size: 5.6rem;
     font-weight: 700;
     line-height: 1.3;
-    text-shadow: 1px 2px black ;
-    
+    text-shadow: 1px 2px black ;   
 }
 
 .home-content h1 span {
@@ -111,6 +115,7 @@ section {
     
 }
 
+/* aqui le doy estilo a la palabra fronted developer, le doy estilo para que realice el efecto de maquina de escribir */
 .home-content .text-animate h3 {
     font-size: 3.2rem;
     font-weight: 700;
@@ -132,7 +137,7 @@ section {
     left: 0;
     width: 0;
     height: 100%;
-    border-right: 2px solid #dbae58;
+    border-right: 2px solid ;
     z-index: -1;
     animation: homeCursorText 6s linear infinite;
     animation-delay: 2s;
@@ -290,6 +295,7 @@ span {
     border: .2rem solid #dbae58;
 }
 
+/* dar efecto en imagen de circulo en movimiento */
 .about-img .circle-spin {
     position: absolute;
     top: 50%;
@@ -420,6 +426,7 @@ span {
     padding-top: .5rem;
 }
 
+/* a aprtir de aqui comenzamos a dar efectos a skills con barras */
 .skills {
     min-height: auto;
     padding-bottom: 7rem;
@@ -495,6 +502,7 @@ span {
     background: var(--main-color);
 }
 
+/* aqui en las barras que aparecen en el html de skill con el porcentaje determinado  le damos el tamaño como lo podemos observar en   */
 .skills-column:nth-child(1) .skills-content .progreso:nth-child(1) .bar span {
     width: 70%;
 }
@@ -602,7 +610,7 @@ span {
 .contact form .btn-box.btns .btn {
     cursor: pointer;
 }
-
+/*  estilo Footer */
 .footer {
     display: flex;
     justify-content: space-between;
@@ -656,7 +664,7 @@ span {
 }
 
 
-/* Breakpoint */
+/* Aqui le doy estilo para que se pueda ver de determinada manera cuando cambiemos a movil, tablet, etc ( Responsive), que se amolde a determinado pixeles  */
 @media (max-width:1200px) {
     html {
         font-size: 55%;
@@ -696,7 +704,7 @@ span {
         left: -100%;
         width: 100%;
         padding: 1rem 4%;
-        background: transparent;
+        background: var(--bg-color);
         box-shadow: 0 .5rem 1rem rgba(0, 0, 0, .2);
         z-index: 1;
         transition: .25s ease;
@@ -712,9 +720,9 @@ span {
         position: absolute;
         top: 0;
         left: -100;
-        width: 100%;
+        width: 30%;
         height: 100%;
-        background: transparent;
+        background:var(--bg-color);
         border-top: .1rem solid rgba(0, 0, 0, .2);
         z-index: -1;
         transition: .25s ease;
@@ -806,11 +814,9 @@ span {
 }
 
 @media (min-width:768px) {
-    .home{ 
+    .home{
          background-position: right;
         }
-         
-       
 }
 
 /* keyframe animacion */
@@ -850,6 +856,7 @@ span {
     }
 }
 
+/* aqui le doy el efecto para que se mueva el efecto spinner alrededor de la imagen */
 @keyframes aboutSpinner {
     100% {
         transform: translate(-50%, -50%) rotate(360deg);
